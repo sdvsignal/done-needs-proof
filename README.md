@@ -1,5 +1,7 @@
 # done-needs-proof
 
+[![skills.sh](https://skills.sh/b/sdvsignal/done-needs-proof)](https://skills.sh/sdvsignal/done-needs-proof)
+
 A Claude Code plugin that stops Claude from ending a turn on "done", "fixed", "deployed" or "tests pass" when nothing in the turn proves it.
 
 It is a Stop hook. When Claude's final message makes a completion claim, the hook reads the session transcript and checks whether a matching verification ran after the last code edit: a test command for "tests pass", a `curl` or fetch for "deployed", a `git log` or `git status` for "merged", any of those for a plain "done". If the evidence is missing, the stop is blocked and Claude is told which check to run. If Claude then runs it, the message goes through with the output next to the claim. If Claude can't run it, the message has to say what is still unverified.
