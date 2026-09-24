@@ -1,0 +1,9 @@
+{
+  "name": "done-needs-proof",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Claude Code Stop hook: no done claim without evidence in the transcript.",
+  "license": "MIT",
+  "scripts": { "test": "node --test test/*.test.js" },
+  "engines": { "node": ">=18" }
+}

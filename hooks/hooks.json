@@ -1,0 +1,16 @@
+{
+  "description": "Blocks Claude from ending a turn on a done/fixed/deployed/tests-pass claim that nothing in the turn verified.",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/stop-gate.js\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

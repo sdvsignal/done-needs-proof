@@ -1,0 +1,14 @@
+{
+  "name": "done-needs-proof",
+  "owner": { "name": "SDV Signal" },
+  "metadata": {
+    "description": "A Stop hook that makes Claude show evidence before it says done."
+  },
+  "plugins": [
+    {
+      "name": "done-needs-proof",
+      "source": "./",
+      "description": "Blocks done, fixed, deployed or tests-pass claims that nothing in the turn verified."
+    }
+  ]
+}

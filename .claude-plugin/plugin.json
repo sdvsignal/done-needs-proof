@@ -1,0 +1,10 @@
+{
+  "name": "done-needs-proof",
+  "version": "0.1.0",
+  "description": "Stop hook that blocks Claude from claiming done, fixed, deployed or tests-pass without a matching check in the same turn.",
+  "author": { "name": "SDV Signal" },
+  "homepage": "https://github.com/sdvsignal/done-needs-proof",
+  "repository": "https://github.com/sdvsignal/done-needs-proof",
+  "license": "MIT",
+  "keywords": ["hooks", "stop-hook", "verification", "quality", "claude-code"]
+}
